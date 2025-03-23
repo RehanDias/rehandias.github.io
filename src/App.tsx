@@ -36,29 +36,24 @@ function App() {
             apiEndpoint:
                 "https://api-tiktok-downloader.vercel.app/api/v1/download?url=VIDEO_URL_HERE",
             usage: `fetch('https://api-tiktok-downloader.vercel.app/api/v1/download?url=VIDEO_URL_HERE')
-  .then(response => response.json())
-  .then(data => console.log(data));`,
+.then(response => response.json())
+.then(data => console.log(data));`,
             type: "api",
         },
         {
             title: "TikTok Downloader CLI",
             description:
-                "Command-line tool for downloading TikTok videos without watermark. Built with Node.js.",
+                "Command-line tool for downloading TikTok videos and images without watermark. Built with Node.js.",
             tech: ["Node.js", "CLI", "npm"],
-            link: "https://github.com/rehandias/tiktok-downloader-cli",
-            installation: "npm install -g tiktok-downloader-cli",
-            usage: "tiktok-dl <video-url>",
+            link: "https://github.com/rehandias/tiktok-downloader-console",
             type: "cli",
         },
         {
             title: "Cek Tagihan UMB",
             description:
-                "Python CLI tool to check UMB (Universitas Mercu Buana) student payment bills directly from the terminal.",
-            tech: ["Python", "CLI", "Scraping"],
+                "Python-based automation tool to check UMB (Universitas Mercu Buana) student payment bills using web scraping.",
+            tech: ["Python", "Selenium", "Web Scraping"],
             link: "https://github.com/RehanDias/cekTagihanUmb",
-            installation:
-                "git clone https://github.com/RehanDias/cekTagihanUmb.git\ncd cekTagihanUmb\npip install -r requirements.txt",
-            usage: "python cektagihan.py <username> <password>",
             type: "cli",
         },
     ];
@@ -206,35 +201,21 @@ function App() {
                                             <code className="block bg-[#282a36] p-2 rounded text-xs text-[#f8f8f2] overflow-x-auto">
                                                 {project.apiEndpoint}
                                             </code>
-                                        </div>
-                                    )}
-
-                                    {project.installation && (
-                                        <div className="mb-4">
-                                            <h4 className="text-sm font-bold text-[#bd93f9] mb-2">
-                                                Installation:
+                                            <h4 className="text-sm font-bold text-[#bd93f9] mt-4 mb-2">
+                                                Usage:
                                             </h4>
                                             <code className="block bg-[#282a36] p-2 rounded text-xs text-[#f8f8f2] whitespace-pre">
-                                                {project.installation}
+                                                {project.usage}
                                             </code>
                                         </div>
                                     )}
 
-                                    <div className="mb-4">
-                                        <h4 className="text-sm font-bold text-[#bd93f9] mb-2">
-                                            Usage:
-                                        </h4>
-                                        <code className="block bg-[#282a36] p-2 rounded text-xs text-[#f8f8f2] whitespace-pre">
-                                            {project.usage}
-                                        </code>
-                                    </div>
-
-                                    {project.type === "cli" && project.link && (
+                                    {project.link && (
                                         <a
                                             href={project.link}
                                             className="inline-flex items-center text-[#50fa7b] hover:text-[#f1fa8c] transition-colors hover-glow"
                                         >
-                                            View Source{" "}
+                                            View on GitHub{" "}
                                             <Github className="ml-2 w-4 h-4" />
                                         </a>
                                     )}
