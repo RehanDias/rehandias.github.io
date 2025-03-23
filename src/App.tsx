@@ -164,29 +164,29 @@ function App() {
             </section>
 
             {/* Projects Section */}
-            <section className="py-20 px-4 md:px-8 bg-[#282a36] pixel-bg">
+            <section className="py-16 px-4 md:px-8 bg-[#282a36] pixel-bg">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-2xl font-bold mb-12 text-center text-[#50fa7b] glitch-text">
+                    <h2 className="text-2xl font-bold mb-8 text-center text-[#50fa7b] glitch-text">
                         FEATURED PROJECTS
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="bg-[#44475a] retro-border rounded-lg overflow-hidden hover-glow border-[#50fa7b]"
+                                className="bg-[#44475a] retro-border rounded-lg overflow-hidden hover-glow border-[#50fa7b] h-full flex flex-col"
                             >
-                                <div className="p-6">
+                                <div className="p-5 flex flex-col h-full">
                                     <h3 className="text-lg font-bold mb-2 text-[#f1fa8c]">
                                         {project.title}
                                     </h3>
-                                    <p className="text-sm text-[#f8f8f2] mb-4">
+                                    <p className="text-sm text-[#f8f8f2] mb-3">
                                         {project.description}
                                     </p>
-                                    <div className="flex flex-wrap gap-2 mb-4">
+                                    <div className="flex flex-wrap gap-2 mb-3">
                                         {project.tech.map((tech, techIndex) => (
                                             <span
                                                 key={techIndex}
-                                                className="px-3 py-1 bg-[#282a36] text-[#50fa7b] rounded-full text-xs border border-[#50fa7b] hover-glow"
+                                                className="px-2 py-1 bg-[#282a36] text-[#50fa7b] rounded-full text-xs border border-[#50fa7b] hover-glow"
                                             >
                                                 {tech}
                                             </span>
@@ -194,14 +194,14 @@ function App() {
                                     </div>
 
                                     {project.apiEndpoint && (
-                                        <div className="mb-4">
+                                        <div className="mb-3 flex-grow">
                                             <h4 className="text-sm font-bold text-[#bd93f9] mb-2">
                                                 API Endpoint:
                                             </h4>
                                             <code className="block bg-[#282a36] p-2 rounded text-xs text-[#f8f8f2] overflow-x-auto">
                                                 {project.apiEndpoint}
                                             </code>
-                                            <h4 className="text-sm font-bold text-[#bd93f9] mt-4 mb-2">
+                                            <h4 className="text-sm font-bold text-[#bd93f9] mt-3 mb-2">
                                                 Usage:
                                             </h4>
                                             <code className="block bg-[#282a36] p-2 rounded text-xs text-[#f8f8f2] whitespace-pre">
@@ -211,13 +211,15 @@ function App() {
                                     )}
 
                                     {project.link && (
-                                        <a
-                                            href={project.link}
-                                            className="inline-flex items-center text-[#50fa7b] hover:text-[#f1fa8c] transition-colors hover-glow"
-                                        >
-                                            View on GitHub{" "}
-                                            <Github className="ml-2 w-4 h-4" />
-                                        </a>
+                                        <div className="mt-auto pt-3">
+                                            <a
+                                                href={project.link}
+                                                className="inline-flex items-center text-[#50fa7b] hover:text-[#f1fa8c] transition-colors hover-glow text-sm"
+                                            >
+                                                View on GitHub{" "}
+                                                <Github className="ml-2 w-4 h-4" />
+                                            </a>
+                                        </div>
                                     )}
                                 </div>
                             </div>
