@@ -172,7 +172,6 @@ function App() {
     };
 
     const getVisibleProjects = () => {
-        // Use sortedProjects instead of projects
         return sortedProjects.slice(0, visibleCount);
     };
 
@@ -183,17 +182,19 @@ function App() {
     return (
         <div className="min-h-screen bg-[#2A2D3E] pixel-bg crt-effect">
             <div className="scanlines"></div>
-
             {/* Hero Section */}
-            <div className="relative h-screen flex items-center justify-center bg-[#2A2D3E] overflow-hidden">
-                <div className="absolute inset-0 grid grid-cols-8 gap-1 opacity-10">
-                    {Array.from({ length: 64 }).map((_, i) => (
+            <div className="relative h-screen flex items-center justify-center bg-[#2A2D3E] overflow-hidden px-4">
+                {/* Grid Background */}
+                <div className="absolute inset-0 grid grid-cols-8 gap-1 opacity-10 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+                    {Array.from({ length: 80 }).map((_, i) => (
                         <div
                             key={i}
                             className="aspect-square border border-[#50fa7b]"
                         ></div>
                     ))}
                 </div>
+
+                {/* Radial Glow */}
                 <div
                     className="absolute inset-0"
                     style={{
@@ -202,19 +203,23 @@ function App() {
                         animation: "pulse 4s infinite",
                     }}
                 ></div>
-                <div className="text-center z-10 px-4 transform hover:scale-105 transition-transform">
-                    <div className="bg-[#44475a] p-8 retro-border rounded-lg border-[#50fa7b] hover-glow">
-                        <div className="text-[#50fa7b] mb-6 text-xs animate-pulse">
+
+                {/* Content */}
+                <div className="text-center z-10 px-6 sm:px-8 transform hover:scale-105 transition-transform">
+                    <div className="bg-[#44475a] p-6 sm:p-8 retro-border rounded-lg border-[#50fa7b] hover-glow">
+                        <div className="text-[#50fa7b] mb-4 text-xs animate-pulse sm:mb-6">
                             PRESS START
                         </div>
-                        <h1 className="text-4xl mb-4 text-[#f8f8f2] glitch-text">
+                        <h1 className="text-3xl sm:text-4xl mb-3 sm:mb-4 text-[#f8f8f2] glitch-text">
                             Rehan Dias Pratama
                         </h1>
-                        <h2 className="text-xl mb-6 text-[#bd93f9]">
+                        <h2 className="text-lg sm:text-xl mb-4 sm:mb-6 text-[#bd93f9] whitespace-nowrap overflow-hidden text-ellipsis">
                             &gt; {text}
                             <span className="typing-cursor">|</span>
                         </h2>
-                        <div className="flex justify-center space-x-6">
+
+                        {/* Social Icons */}
+                        <div className="flex justify-center space-x-4 sm:space-x-6">
                             <a
                                 href="https://github.com/rehandias"
                                 className="p-2 text-[#50fa7b] transform hover:scale-110 hover:text-[#f1fa8c] transition-all duration-300 ease-in-out hover:rotate-6 hover:shadow-glow"
@@ -440,7 +445,7 @@ function App() {
             <footer className="bg-[#282a36] text-[#f8f8f2] py-8">
                 <div className="max-w-6xl mx-auto px-4 text-center">
                     <p className="text-sm">
-                        © 2024 Rehan Dias Pratama. All rights reserved.
+                        © 2025 Rehan Dias Pratama. All rights reserved.
                     </p>
                 </div>
             </footer>
