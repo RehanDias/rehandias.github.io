@@ -148,10 +148,10 @@ function App() {
         {
             title: "Cek Tagihan UMB",
             description:
-                "Automated payment status checker for UMB (Universitas Mercu Buana) students. The tool verifies if tuition payments are completed and displays detailed payment information including amount due, payment deadlines, and payment methods if any outstanding balance exists.",
+                "Automated payment status checker for UMB (Universitas Mercu Buana) students built with Node.js and Puppeteer. Features include automated login, fee status monitoring, detailed payment breakdown, and environment variable support for secure credential management. Built for reliability and easy integration with other systems.",
             shortDescription:
-                "Payment status checker showing outstanding tuition fees and payment details for UMB students.",
-            tech: ["Python", "Pyppeteer", "Web Scraping"],
+                "Node.js-based payment status checker for UMB students with automated web scraping.",
+            tech: ["Node.js", "Puppeteer", "Web Scraping"],
             repo: "https://github.com/RehanDias/cekTagihanUmb",
             type: "repo",
         },
