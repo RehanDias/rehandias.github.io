@@ -159,9 +159,9 @@ function App() {
 
     // Sort projects by type and quantity
     const sortedProjects = [
-        ...projects.filter((p) => p.type === "website"),
         ...projects.filter((p) => p.type === "api"),
         ...projects.filter((p) => p.type === "repo"),
+        ...projects.filter((p) => p.type === "website"),
     ];
 
     const toggleDescription = (index: number) => {
