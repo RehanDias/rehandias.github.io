@@ -222,24 +222,32 @@ function App() {
                         <div className="flex justify-center space-x-4 sm:space-x-6">
                             <a
                                 href="https://github.com/rehandias"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="p-2 text-[#50fa7b] transform hover:scale-110 hover:text-[#f1fa8c] transition-all duration-300 ease-in-out hover:rotate-6 hover:shadow-glow"
                             >
                                 <Github size={24} />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/rehan-dias-pratama/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="p-2 text-[#50fa7b] transform hover:scale-110 hover:text-[#f1fa8c] transition-all duration-300 ease-in-out hover:rotate-6 hover:shadow-glow"
                             >
                                 <Linkedin size={24} />
                             </a>
                             <a
                                 href="https://instagram.com/rehandiazz"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="p-2 text-[#50fa7b] transform hover:scale-110 hover:text-[#f1fa8c] transition-all duration-300 ease-in-out hover:rotate-6 hover:shadow-glow"
                             >
                                 <Instagram size={24} />
                             </a>
                             <a
                                 href="mailto:rehanpratama282@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="p-2 text-[#50fa7b] transform hover:scale-110 hover:text-[#f1fa8c] transition-all duration-300 ease-in-out hover:rotate-6 hover:shadow-glow"
                             >
                                 <Mail size={24} />
@@ -356,6 +364,8 @@ function App() {
                                         <div className="p-5 bg-[#343746] border-t border-[#50fa7b]/20">
                                             <a
                                                 href={project.website}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                                 className="inline-flex items-center relative group"
                                             >
                                                 <span className="flex items-center text-sm text-[#50fa7b] group-hover:text-[#f1fa8c] transition-all duration-300">
@@ -378,6 +388,8 @@ function App() {
                                     <div className="p-5 bg-[#343746] border-t border-[#50fa7b]/20">
                                         <a
                                             href={project.repo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="inline-flex items-center relative group"
                                         >
                                             <span className="flex items-center text-sm text-[#50fa7b] group-hover:text-[#f1fa8c] transition-all duration-300">
@@ -433,6 +445,8 @@ function App() {
                         </p>
                         <a
                             href="mailto:rehanpratama282@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center bg-[#50fa7b] text-[#282a36] px-6 py-3 rounded-lg retro-border hover:bg-[#f1fa8c] transition-colors hover-glow"
                         >
                             Contact Me <Mail className="ml-2 w-5 h-5" />
