@@ -33,6 +33,16 @@ function App() {
 
     const projects = [
         {
+            title: "Tetris Game",
+            description:
+                "Modern implementation of the classic Tetris game built with React and Tailwind CSS. Features include responsive design, keyboard controls, score tracking, and game state management. The game showcases clean code architecture and modern web development practices.",
+            shortDescription:
+                "Classic Tetris game reimagined with modern web technologies.",
+            tech: ["React", "TypeScript", "Tailwind CSS"],
+            repo: "https://github.com/RehanDias/tetris-game",
+            type: "repo",
+        },
+        {
             title: "Ara Spill - ItszahraNur Products",
             description:
                 "Modern web platform showcasing product recommendations and reviews from influencer ItszahraNur (Ara). Features include detailed product reviews, usage tips, and direct purchase links. Built with Next.js and TypeScript for optimal performance and user experience. Perfect for followers looking to discover Ara's favorite products.",
