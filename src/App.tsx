@@ -33,6 +33,26 @@ function App() {
 
     const projects = [
         {
+            title: "Free Games API",
+            description:
+                "Golang-based API service that provides real-time information about free games from Epic Games Store. Features include current free games, upcoming free games, and game details. Built with high-performance Go for quick response times and efficient resource usage.",
+            shortDescription:
+                "High-performance API for tracking free games from Epic Games Store built with Go.",
+            tech: ["Golang", "REST API", "Epic Games API"],
+            repo: "https://github.com/RehanDias/free-games-api",
+            type: "repo",
+        },
+        {
+            title: "Athirrar Linktree",
+            description:
+                "Modern, customized Linktree-style website for Athir AR built with React. Features a clean, responsive design showcasing social media links and important information. Implements smooth animations and modern UI practices for an engaging user experience.",
+            shortDescription:
+                "Custom Linktree-style personal landing page for Athir AR.",
+            tech: ["React", "Tailwind CSS", "Responsive Design"],
+            website: "https://www.athirrar.my.id/",
+            type: "website",
+        },
+        {
             title: "Tetris Game",
             description:
                 "Modern implementation of the classic Tetris game built with React and Tailwind CSS. Features include responsive design, keyboard controls, score tracking, and game state management. The game showcases clean code architecture and modern web development practices.",
